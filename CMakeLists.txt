@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 3.6.3)
-set(PROJ_NAME Playground)
-project (${PROJ_NAME} VERSION 0.1 LANGUAGES CXX)
+set(PROJECT_NAME Playground)
+
+project (${PROJECT_NAME} VERSION 0.1 LANGUAGES CXX)
 include(cmake/clang-cpp-tools.cmake)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
