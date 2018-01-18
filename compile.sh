@@ -1,8 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
 
-SCRIPT=`realpath $0`
-SCRIPTPATH=`dirname $SCRIPT`
+SCRIPT=$(realpath $0)
+SCRIPTPATH=$(dirname $SCRIPT)
 
-cd $SCRIPTPATH/build/
-cmake ..
+mkdir -p $SCRIPTPATH/build/ &&\
+cd $SCRIPTPATH/build/ &&\
+cmake .. &&\
 make
