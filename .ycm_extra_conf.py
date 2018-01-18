@@ -7,7 +7,7 @@ flags = [
 '-pedantic',
 '-Wall',
 '-Wextra',
-'-std=c++14',
+'-std=c++17',
 '-I',
 '.',
 '-I',
@@ -15,7 +15,7 @@ flags = [
 '-I',
 'lib/spdlog/include',
 '-I',
-'/usr/include/c++/6.2.1/',
+'/usr/include/c++/7.2.1/',
 ]
 
 compilation_database_folder = ""
